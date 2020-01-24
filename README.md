@@ -33,6 +33,7 @@ rosrun usb_cam usb_cam_node
 ```bash  
 rosrun  robosis2019_2 opencvmouse.py 
 ```
+抽出したい色を入力（）
 ### publishされた画像の可視化
 ```bash  
 rqt_image_view
