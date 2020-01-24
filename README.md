@@ -18,7 +18,16 @@ cd ~/catkin_ws/src
 git clone　https://github.com/OtsukiTaisuke/robosis2019_2.git　　
 cd ~/catkin_ws
 catkin_make
-roslaunch usb_cam usb_cam-test.launch 
+```
+```bash  
+roslaunch usb_cam usb_cam-test.launch  
+```
+or  
+```bash  
+roscore
+rosrun usb_cam usb_cam_node
+```
+```bash  
 rosrun  robosis2019_2 opencvmouse.py 
 rqt_image_view
 ```
