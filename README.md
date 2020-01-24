@@ -12,13 +12,14 @@ rosにusb_camをインストール　　
 ```bash  
 sudo apt-get install ros-melodic-usb-cam
 ```
-実行
+コンパイル
 ```bash  
 cd ~/catkin_ws/src  
 git clone　https://github.com/OtsukiTaisuke/robosis2019_2.git　　
 cd ~/catkin_ws
 catkin_make
 ```
+usb_camの実行
 ```bash  
 roslaunch usb_cam usb_cam-test.launch  
 ```
@@ -27,10 +28,13 @@ or
 roscore
 rosrun usb_cam usb_cam_node
 ```
+プログラムの実行
 ```bash  
 rosrun  robosis2019_2 opencvmouse.py 
+```
+publishされた画像の可視化
+```bash  
 rqt_image_view
 ```
-
 ## demo video
 https://youtu.be/QaOt0Skv2pM
